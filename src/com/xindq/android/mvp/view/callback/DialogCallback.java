@@ -1,19 +1,10 @@
 package com.xindq.android.mvp.view.callback;
 
-/**
- * Android MVP Activity Callback , DialogCallback
- */
+import com.xindq.android.mvp.view.callback.msg.Message;
+
 public interface DialogCallback {
 
-    /**
-     * show dialog
-     *
-     * @param message the message shown in the dialog
-     */
-    void onShowDialog(Object message);
+    void onShowDialog(Message<?> message);
 
-    /**
-     * close dialog
-     */
     void onDismissDialog();
 }
